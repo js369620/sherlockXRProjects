@@ -19,6 +19,28 @@ public class CoreFeatures : MonoBehaviour
      * - enum: uses human-readable text to describe integers or something? I missed part of it
      *   - anything you want to make a list of and readable (think dropdown menus)
      * 
+     * 
+1 meow, but            /\  ___  /\    ___________
+2 all sexy-like     __( ' O w O ' ) |               = > =-
+3               _/     |     /    / '         "            
+4          __--          |   /               '        ,       }
+5         ,        )   ` |              _,""           |      |
+6       /         /     `        __--"'                 |    /\
+7      /       ,                            ,              j   |
+8      |        T          i                 " -=  `            |
+9     /{         |          |                      /            \
+10   '        ,,  |          |                   ,|            | }
+11  {      '""  |            |                    |         !   |
+12   |           |',         |                   , \       /   }
+13  /,          /  \        / \                _'    > =     \  |
+14 {  "'   ' ,,,     '-,' ...'-  __ --     /          | /
+15 !            \         \       ,,             , '         | /
+16 '        _ \         \  __ .            -"             /
+17  '      ,     -- >\   __/'    ----_   "                /
+18   '   /   __    )\ /    _     !     |[        ,    = /
+19    ' /   __ )  |  - _    |     |             '
+20     `! __       )    |  -       |     |         -
+"That's what a catboy should be" - Rowan Knutsen 2024
      * */
 
     public bool AudioSFXSourceCreated {  get; set; }
