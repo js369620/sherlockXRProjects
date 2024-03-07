@@ -79,6 +79,8 @@ public class DoorFeatures : CoreFeatures
         {
             OpenDoor();
         });
+        
+        //OpenDoor();
     }
 
     public void OpenDoor()
@@ -87,34 +89,38 @@ public class DoorFeatures : CoreFeatures
         {
             PlayOnStart();
             open = true;
-            //StartCoroutine(ProcessMotion());
+            StartCoroutine(ProcessMotion());
         }
 
         //open ? false : true;
         //rowan quit screen-peeking that's cheating 
         //REMOVE THIS
-        OpenDoor();
+        //OpenDoor();
     }
 
     private IEnumerator ProcessMotion()
     {
-        var angle = doorPivot.localEulerAngles.y < 180 ? doorPivot.localEulerAngles.y : doorPivot.localEulerAngles.y - 360;
-
-        angle = reverseAngleDirection ? Mathf.Abs(angle) : angle;
-
-        if (angle <= maxAngle)
+        while (open)
         {
-            doorPivot?.Rotate(Vector3.up, doorSpeed * Time.deltaTime * (reverseAngleDirection ? -1 : 1));
-            
-        }
-        else
-        {
-            open = false;
-            var featureRigidBody = GetComponent<Rigidbody>();
-            if (featureRigidBody != null && makeKinematicOnOpen) featureRigidBody.isKinematic = true;
-            
-        }
+            var angle = doorPivot.localEulerAngles.y < 180 ? doorPivot.localEulerAngles.y : doorPivot.localEulerAngles.y - 360;
 
-        yield return null;
+            angle = reverseAngleDirection ? Mathf.Abs(angle) : angle;
+
+            if (angle <= maxAngle)
+            {
+                doorPivot?.Rotate(Vector3.up, doorSpeed * Time.deltaTime * (reverseAngleDirection ? -1 : 1));
+
+            }
+            else
+            {
+                open = false;
+                var featureRigidBody = GetComponent<Rigidbody>();
+                if (featureRigidBody != null && makeKinematicOnOpen) featureRigidBody.isKinematic = true;
+
+            }
+
+            yield return null; //needs to be in the loop to work with the if statement
+        }
+        
     }
 }

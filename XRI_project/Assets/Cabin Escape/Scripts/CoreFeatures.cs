@@ -2,11 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum FeatureUsage
-{
-    Once, //use once
-    Toggle //if we want to use the features more than once
-}
+
 
 public class CoreFeatures : MonoBehaviour
 {
