@@ -323,7 +323,6 @@ GameObject:
   - component: {fileID: 1191361651}
   - component: {fileID: 1191361650}
   - component: {fileID: 1191361649}
-  - component: {fileID: 1191361648}
   - component: {fileID: 1191361647}
   - component: {fileID: 1191361646}
   - component: {fileID: 1191361652}
@@ -361,7 +360,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a35f6cfbfba9b548aaa00d52cfe8a50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1926387272}
   m_Colliders:
   - {fileID: 1191361649}
   m_InteractionLayerMask:
@@ -479,19 +478,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1191361648
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1191361644}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e617ac95c55644f938929ee87c74b211, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectNumber: 2
 --- !u!64 &1191361649
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -579,12 +565,12 @@ MonoBehaviour:
   <AudioClipOnStart>k__BackingField: {fileID: 0}
   <AudioClipOnEnd>k__BackingField: {fileID: 0}
   featureUsage: 0
-  drawerSlide: {fileID: 0}
-  maxDistance: 1
+  drawerSlide: {fileID: 1191361645}
+  maxDistance: -8.6
   featureDirection: 0
   open: 0
   speed: 1
-  simpleInteractable: {fileID: 0}
+  simpleInteractable: {fileID: 1191361646}
 --- !u!1001 &1439346345
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1140,7 +1126,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7001969337848283469, guid: 1118215e0847ed64e872d81d7e8d2c47, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.16
+      value: 1.68
       objectReference: {fileID: 0}
     - target: {fileID: 7001969337848283469, guid: 1118215e0847ed64e872d81d7e8d2c47, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1148,23 +1134,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7001969337848283469, guid: 1118215e0847ed64e872d81d7e8d2c47, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.29
+      value: -5.57
       objectReference: {fileID: 0}
     - target: {fileID: 7001969337848283469, guid: 1118215e0847ed64e872d81d7e8d2c47, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0
+      value: 0.9997058
       objectReference: {fileID: 0}
     - target: {fileID: 7001969337848283469, guid: 1118215e0847ed64e872d81d7e8d2c47, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7001969337848283469, guid: 1118215e0847ed64e872d81d7e8d2c47, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 1
+      value: 0.024258753
       objectReference: {fileID: 0}
     - target: {fileID: 7001969337848283469, guid: 1118215e0847ed64e872d81d7e8d2c47, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7001969337848283469, guid: 1118215e0847ed64e872d81d7e8d2c47, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1172,7 +1158,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7001969337848283469, guid: 1118215e0847ed64e872d81d7e8d2c47, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
+      value: 2.78
       objectReference: {fileID: 0}
     - target: {fileID: 7001969337848283469, guid: 1118215e0847ed64e872d81d7e8d2c47, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
