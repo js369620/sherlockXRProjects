@@ -48,7 +48,7 @@ public class AudioManager : Singleton<AudioManager>
     {
         while(true) //flashback to josh messing with the disc drive to open and close infinitely
         {
-            yield return new WaitUntil(() => !audioSource.isPlaying);
+            yield return new  WaitUntil(() => !audioSource.isPlaying);
             ShuffleAndPlay();
             onCurrentTrackEnd?.Invoke(); //invokes this action to anything that is listening
         }
